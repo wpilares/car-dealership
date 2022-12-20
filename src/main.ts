@@ -8,7 +8,7 @@ async function bootstrap() {
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true, // Solo deja la data indicada en el DTO
-      forbidNonWhitelisted: true, //Indica errores para propiedades que no estan en el DTO
+      forbidNonWhitelisted: true, //Indica errores para propiedades que no están en el DTO
     }),
   );
   await app.listen(3000);
